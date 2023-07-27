@@ -1,5 +1,5 @@
 import './index.css';
-import { getRequest, postRequest } from './modules/api';
+import { getRequest, postRequest } from './modules/api.js';
 
 const form = document.querySelector('.form');
 const scores = document.querySelector('.table-container');
@@ -21,7 +21,7 @@ submit.addEventListener('click', (e) => {
   const score = document.querySelector('#score').value;
   const data = {
     user: name,
-    score: score,
+    score,
   };
   postRequest(data);
   form.reset();
