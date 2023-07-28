@@ -4,7 +4,122 @@
   box-sizing: border-box;
 }
 
+main {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: 600;
+  color: #fdfdfe;
+  text-shadow:
+    0 0 5px #75717a,
+    0 0 10px #75717a,
+    0 0 10px #75717a,
+    0 0 20px #78707f;
+  text-align: center;
+}
+
+body {
+  background-image: url("./assets/touann-gatouillat-vergos-i8om-rcoiFY-unsplash\ \(1\).jpg");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.table-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  border-collapse: collapse;
+}
+
+.main-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.top-scoreboard {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-body td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-container thead tr th {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-body tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+#refresh-btn {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.form button {
+  width: 100%;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .main-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }

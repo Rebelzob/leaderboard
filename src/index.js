@@ -2,7 +2,7 @@ import './index.css';
 import { getRequest, postRequest } from './modules/api.js';
 
 const form = document.querySelector('.form');
-const scores = document.querySelector('.table-container');
+const scores = document.querySelector('.table-body');
 const refresh = document.querySelector('#refresh-btn');
 const submit = document.getElementById('submit-btn');
 
@@ -10,9 +10,9 @@ window.addEventListener = ('DOMContentLoaded', () => {
   getRequest();
 });
 
-refresh.addEventListener('click', () => {
+refresh.addEventListener('click', async () => {
   scores.innerHTML = '';
-  getRequest();
+  await getRequest();
 });
 
 submit.addEventListener('click', (e) => {
