@@ -17,7 +17,7 @@ const getRequest = async () => {
   try {
     const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/5AVHts8XtlYBfGgCSSC7/scores/');
     const data = await response.json();
-    const scores = document.querySelector('.table-container');
+    const scores = document.querySelector('.table-body');
     data.result.forEach((element) => {
       const row = document.createElement('tr');
       row.innerHTML = `<td>${element.user}</td><td>${element.score}</td>`;
